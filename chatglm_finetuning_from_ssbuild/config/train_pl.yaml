@@ -7,7 +7,7 @@ do_train: true
 train_file:
 - ../data/*.json
 
-max_epochs: 10 // from 20
+max_epochs: 10 
 max_steps: -1
 
  # *** optimizer
@@ -47,12 +47,12 @@ scheduler:
 optimizer_betas: !!python/tuple
 - 0.9
 - 0.999
-train_batch_size: 2
-eval_batch_size: 2
+train_batch_size: 1
+eval_batch_size: 1
 test_batch_size: 2
-learning_rate: 2.0e-04    // from 05
+learning_rate: 2.0e-04    
 adam_epsilon: 1.0e-08
-gradient_accumulation_steps: 4  // from 1
+gradient_accumulation_steps: 4  
 max_grad_norm: 1.0
 weight_decay: 0
 warmup_steps: 0

@@ -42,7 +42,7 @@ if __name__ == '__main__':
     model = model.eval()
 
     text_list = [
-        "写一个诗歌，关于冬天",
+        "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?",
         "晚上睡不着应该怎么办",
     ]
     for input in text_list:

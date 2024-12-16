@@ -5,6 +5,8 @@ import glob
 import sys
 import os
 from functools import cache
+import logging
+logging.basicConfig(filename='invalid_data.log', level=logging.WARNING)
 
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
@@ -99,8 +101,9 @@ class NN_DataHelper(DataHelper):
             # 自行做模板
             for (role, q, a) in paragraph:
                 # 不是system prompt  answer 必须存在
-                if role != "system":
-                    assert len(a), ValueError('answer cannot empty')
+                if role != "system" and not a.strip():
+                    logging.warning(f"Invalid entry at line {line_id}: {q}")
+                    continue
                 sub.append((role, q, a))
             D.append(copy.deepcopy(sub))
             sub.clear()

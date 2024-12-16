@@ -9,7 +9,7 @@ export train_file=${train_file}
 export enable_deepspeed=false
 export enable_ptv2=false
 export enable_lora=false
-export load_in_bit=0
+export load_in_bit=8
 
 # export CUDA_VISIBLE_DEVICES=0,1,2,3
 

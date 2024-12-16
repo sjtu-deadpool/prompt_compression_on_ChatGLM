@@ -1,0 +1,11 @@
+# 忽略所有 __pycache__ 文件夹  
+__pycache__/  
+
+# 忽略所有 .lh 文件夹  
+.lh/
+
+best_ckpt/
+
+outputs_pl/
+
+*.log
