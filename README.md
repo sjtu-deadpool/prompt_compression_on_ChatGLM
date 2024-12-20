@@ -176,7 +176,6 @@ Before starting, place the required JSON dataset files into the `data` folder. A
 output_weight_dir = './best_ckpt_lora'
 ```
 
-Under the current parameter settings, the GPU memory usage has reached **15.6GB**, likely due to other processes such as the display taking up additional memory.
 
 ```bash
 # Prepare the dataset
