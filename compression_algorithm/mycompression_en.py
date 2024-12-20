@@ -10,7 +10,7 @@ from openai import OpenAI
 
 # Initialize the OpenAI client
 client = OpenAI(
-    api_key="API_KEY"  
+    api_key="api-key" # Replace with your OpenAI API key
 )
 
 
